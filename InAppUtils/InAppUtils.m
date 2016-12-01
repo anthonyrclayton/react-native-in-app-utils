@@ -119,6 +119,8 @@ restoreCompletedTransactionsFailedWithError:(NSError *)error
               NSDictionary *purchase = @{
                 @"originalTransactionIdentifier": transaction.originalTransaction.transactionIdentifier,
                 @"transactionIdentifier": transaction.transactionIdentifier,
+                @"transactionDate": transaction.transactionDate,
+                @"transactionState": transaction.transactionState,
                 @"productIdentifier": transaction.payment.productIdentifier
               };
 
